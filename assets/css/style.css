@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Itim;
+    src: url(../fonts/Itim-Regular.ttf);
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../images/pattern.svg);
+    font-family: Itim, sans-serif;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    background: #FEFEFE;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2.5rem;
+    color: #185172;
+    margin: 0;
+}
+
+.verse {
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: rgb(128, 128, 128);
+    background: #DDD;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+.verse p:first-letter {
+    text-transform: uppercase;
+}
+
+/* Styles des couplets */
+.member-baby {
+    background-color: #f9c74f;
+    background-image: url(../images/baby.svg);
+    color: #99782d;
+}
+
+.member-mommy {
+    background-color: #f94187;
+    color: rgb(119, 35, 53);
+    background-image: url(../images/mommy.svg);
+    
+}
+
+.member-daddy {
+    background-color: #2156a5;
+    color: #0c2c5e;
+    background-image: url(../images/daddy.svg);
+   
+}
+.member-grandma {
+    background-color: #f3722c;
+    background-image: url(../images/grandma.svg);
+    color: #af4e19;
+}
+.member-grandpa {
+    background-color: #90BE6D;
+    color: #65884a;
+    background-image: url(../images/grandpa.svg);
+}
+
+@media screen and (max-width: 600px) {
+    .verse {
+        background-image: none;
+    }
+}
